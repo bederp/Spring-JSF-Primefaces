@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<body>
+	<ui:composition>
+
+		<h:form id="leftMenuFormId">
+			<f:ajax render=":content_panel">
+				<h:commandLink value="page1" action="#{templateController.setPage('1')}" />
+				<br></br>
+				<h:commandLink value="page2" action="#{templateController.setPage('2')}" />
+				<br></br>
+				<h:commandLink value="page3" action="#{templateController.setPage('3')}" />
+			</f:ajax>
+		</h:form>
+
+	</ui:composition>
+</body>
+</html>
